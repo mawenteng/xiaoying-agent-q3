@@ -1,0 +1,116 @@
+{
+  "status": "completed",
+  "answer": "依据 P01《小影产品功能 FAQ》：小影支持字幕导出；可在导出面板勾选「导出字幕」，生成与成片同名的 .srt 文件。",
+  "citations": [
+    {
+      "doc_id": "P01",
+      "chunk_id": "P01-C1",
+      "quote": "问：小影是否支持字幕导出？答：支持。用户可在导出面板勾选「导出字幕」，生成与成片同名的 .srt 文件。当前公开材料未提供具体效率提升百分比类数据。"
+    },
+    {
+      "doc_id": "P01",
+      "chunk_id": "P01-C2",
+      "quote": "问：支持哪些字幕格式？答：标准导出为 SRT；部分版本支持 VTT。具体以当前客户端版本说明为准。"
+    }
+  ],
+  "gaps": [],
+  "ask_user": null,
+  "trace": [
+    {
+      "step": 1,
+      "action": {
+        "name": "search",
+        "rationale": "尚无检索结果，先按用户问题（含上下文）检索制度/FAQ。",
+        "query": "小影支持字幕导出吗？"
+      },
+      "rationale": "尚无检索结果，先按用户问题（含上下文）检索制度/FAQ。",
+      "observation": {
+        "step": 1,
+        "tool": "search",
+        "params": {
+          "query": "小影支持字幕导出吗？"
+        },
+        "ok": true,
+        "summary": "search count=1 ids=['P01']",
+        "raw": {
+          "ok": true,
+          "query": "小影支持字幕导出吗？",
+          "hits": [
+            {
+              "doc_id": "P01",
+              "title": "小影产品功能 FAQ",
+              "version_date": "2025-01-10",
+              "score": 14,
+              "preview": "问：小影是否支持字幕导出？答：支持。用户可在导出面板勾选「导出字幕」，生成与成片同名的 .srt 文件。当前公开材料未提供具体效率提升百分比类数据。"
+            }
+          ],
+          "count": 1
+        }
+      }
+    },
+    {
+      "step": 2,
+      "action": {
+        "name": "read",
+        "rationale": "检索命中 P01，读取原文片段以支撑回答。",
+        "doc_id": "P01"
+      },
+      "rationale": "检索命中 P01，读取原文片段以支撑回答。",
+      "observation": {
+        "step": 2,
+        "tool": "read",
+        "params": {
+          "doc_id": "P01",
+          "chunk_id": null
+        },
+        "ok": true,
+        "summary": "read doc_id=P01 title=小影产品功能 FAQ",
+        "raw": {
+          "ok": true,
+          "doc_id": "P01",
+          "title": "小影产品功能 FAQ",
+          "version_date": "2025-01-10",
+          "chunks": [
+            {
+              "chunk_id": "P01-C1",
+              "text": "问：小影是否支持字幕导出？答：支持。用户可在导出面板勾选「导出字幕」，生成与成片同名的 .srt 文件。当前公开材料未提供具体效率提升百分比类数据。"
+            },
+            {
+              "chunk_id": "P01-C2",
+              "text": "问：支持哪些字幕格式？答：标准导出为 SRT；部分版本支持 VTT。具体以当前客户端版本说明为准。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "step": 3,
+      "action": {
+        "name": "finish",
+        "rationale": "已有原文依据且未见冲突，给出有引用的明确答案。",
+        "answer": "依据 P01《小影产品功能 FAQ》：小影支持字幕导出；可在导出面板勾选「导出字幕」，生成与成片同名的 .srt 文件。",
+        "citations": [
+          {
+            "doc_id": "P01",
+            "chunk_id": "P01-C1",
+            "quote": "问：小影是否支持字幕导出？答：支持。用户可在导出面板勾选「导出字幕」，生成与成片同名的 .srt 文件。当前公开材料未提供具体效率提升百分比类数据。"
+          },
+          {
+            "doc_id": "P01",
+            "chunk_id": "P01-C2",
+            "quote": "问：支持哪些字幕格式？答：标准导出为 SRT；部分版本支持 VTT。具体以当前客户端版本说明为准。"
+          }
+        ],
+        "status": "completed"
+      },
+      "rationale": "已有原文依据且未见冲突，给出有引用的明确答案。",
+      "observation": null
+    }
+  ],
+  "decision_mode": "mock",
+  "steps_used": 3,
+  "tool_calls": 2,
+  "acceptance_points": [
+    "明确答案"
+  ]
+}

@@ -1,0 +1,54 @@
+[
+  {
+    "case": "case-normal",
+    "status": "completed",
+    "steps": 3,
+    "acceptance": [
+      "明确答案"
+    ]
+  },
+  {
+    "case": "case-conflict",
+    "status": "needs_confirmation",
+    "steps": 4,
+    "acceptance": [
+      "文档冲突"
+    ]
+  },
+  {
+    "case": "case-out-of-corpus",
+    "status": "out_of_scope",
+    "steps": 2,
+    "acceptance": [
+      "资料外问题",
+      "信息或资料不足"
+    ]
+  },
+  {
+    "case": "case-paraphrase",
+    "status": "completed",
+    "steps": 3,
+    "acceptance": [
+      "改写后的相似问题",
+      "明确答案"
+    ]
+  },
+  {
+    "case": "case-followup",
+    "status": "needs_confirmation",
+    "steps": 4,
+    "acceptance": [
+      "上下文追问",
+      "文档冲突"
+    ]
+  },
+  {
+    "case": "case-tool-fail",
+    "status": "completed",
+    "steps": 4,
+    "acceptance": [
+      "工具失败",
+      "明确答案"
+    ]
+  }
+]

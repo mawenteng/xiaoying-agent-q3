@@ -1,0 +1,19 @@
+{
+  "question": "那期限是多久？",
+  "history": [
+    {
+      "role": "user",
+      "content": "我想了解费用报销相关规定"
+    },
+    {
+      "role": "assistant",
+      "content": "请问您想了解报销材料、期限还是差旅专项？"
+    }
+  ],
+  "mock": true,
+  "inject_tool_fail": null,
+  "acceptance_points": [
+    "上下文追问",
+    "文档冲突"
+  ]
+}

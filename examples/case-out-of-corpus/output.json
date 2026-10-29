@@ -1,0 +1,56 @@
+{
+  "status": "out_of_scope",
+  "answer": "该问题涉及融资/估值等，不在当前制度与产品 FAQ 资料范围内，无法给出有依据的答复。",
+  "citations": [],
+  "gaps": [
+    "out_of_corpus_topic"
+  ],
+  "ask_user": null,
+  "trace": [
+    {
+      "step": 1,
+      "action": {
+        "name": "search",
+        "rationale": "尚无检索结果，先按用户问题（含上下文）检索制度/FAQ。",
+        "query": "公司下一轮融资估值是多少？"
+      },
+      "rationale": "尚无检索结果，先按用户问题（含上下文）检索制度/FAQ。",
+      "observation": {
+        "step": 1,
+        "tool": "search",
+        "params": {
+          "query": "公司下一轮融资估值是多少？"
+        },
+        "ok": true,
+        "summary": "search count=0 ids=[]",
+        "raw": {
+          "ok": true,
+          "query": "公司下一轮融资估值是多少？",
+          "hits": [],
+          "count": 0
+        }
+      }
+    },
+    {
+      "step": 2,
+      "action": {
+        "name": "finish",
+        "rationale": "问题主题明确超出合成语料覆盖范围，停止并报告资料缺口。",
+        "answer": "该问题涉及融资/估值等，不在当前制度与产品 FAQ 资料范围内，无法给出有依据的答复。",
+        "gaps": [
+          "out_of_corpus_topic"
+        ],
+        "status": "out_of_scope"
+      },
+      "rationale": "问题主题明确超出合成语料覆盖范围，停止并报告资料缺口。",
+      "observation": null
+    }
+  ],
+  "decision_mode": "mock",
+  "steps_used": 2,
+  "tool_calls": 1,
+  "acceptance_points": [
+    "资料外问题",
+    "信息或资料不足"
+  ]
+}

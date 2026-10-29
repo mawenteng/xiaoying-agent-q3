@@ -1,0 +1,9 @@
+{
+  "question": "报销期限多久？",
+  "history": [],
+  "mock": true,
+  "inject_tool_fail": null,
+  "acceptance_points": [
+    "文档冲突"
+  ]
+}

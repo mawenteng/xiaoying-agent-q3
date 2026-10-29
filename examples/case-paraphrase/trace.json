@@ -1,0 +1,83 @@
+[
+  {
+    "step": 1,
+    "action": {
+      "name": "search",
+      "rationale": "尚无检索结果，先按用户问题（含上下文）检索制度/FAQ。",
+      "query": "入职满一年以后，带薪年休假能休几天？"
+    },
+    "rationale": "尚无检索结果，先按用户问题（含上下文）检索制度/FAQ。",
+    "observation": {
+      "step": 1,
+      "tool": "search",
+      "params": {
+        "query": "入职满一年以后，带薪年休假能休几天？"
+      },
+      "ok": true,
+      "summary": "search count=1 ids=['HR01']",
+      "raw": {
+        "ok": true,
+        "query": "入职满一年以后，带薪年休假能休几天？",
+        "hits": [
+          {
+            "doc_id": "HR01",
+            "title": "员工年假管理制度",
+            "version_date": "2024-01-01",
+            "score": 7,
+            "preview": "第五条 带薪年休假：员工连续工作满一年后，可享受每年五（5）个工作日的带薪年休假。未休完的年假原则上不结转至下一年度，公司另有规定的除外。"
+          }
+        ],
+        "count": 1
+      }
+    }
+  },
+  {
+    "step": 2,
+    "action": {
+      "name": "read",
+      "rationale": "检索命中 HR01，读取原文片段以支撑回答。",
+      "doc_id": "HR01"
+    },
+    "rationale": "检索命中 HR01，读取原文片段以支撑回答。",
+    "observation": {
+      "step": 2,
+      "tool": "read",
+      "params": {
+        "doc_id": "HR01",
+        "chunk_id": null
+      },
+      "ok": true,
+      "summary": "read doc_id=HR01 title=员工年假管理制度",
+      "raw": {
+        "ok": true,
+        "doc_id": "HR01",
+        "title": "员工年假管理制度",
+        "version_date": "2024-01-01",
+        "chunks": [
+          {
+            "chunk_id": "HR01-C1",
+            "text": "第五条 带薪年休假：员工连续工作满一年后，可享受每年五（5）个工作日的带薪年休假。未休完的年假原则上不结转至下一年度，公司另有规定的除外。"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "step": 3,
+    "action": {
+      "name": "finish",
+      "rationale": "已有原文依据且未见冲突，给出有引用的明确答案。",
+      "answer": "依据 HR01《员工年假管理制度》：员工连续工作满一年后，可享受每年五个工作日的带薪年休假。",
+      "citations": [
+        {
+          "doc_id": "HR01",
+          "chunk_id": "HR01-C1",
+          "quote": "第五条 带薪年休假：员工连续工作满一年后，可享受每年五（5）个工作日的带薪年休假。未休完的年假原则上不结转至下一年度，公司另有规定的除外。"
+        }
+      ],
+      "status": "completed"
+    },
+    "rationale": "已有原文依据且未见冲突，给出有引用的明确答案。",
+    "observation": null
+  }
+]

@@ -1,0 +1,10 @@
+{
+  "question": "公司下一轮融资估值是多少？",
+  "history": [],
+  "mock": true,
+  "inject_tool_fail": null,
+  "acceptance_points": [
+    "资料外问题",
+    "信息或资料不足"
+  ]
+}

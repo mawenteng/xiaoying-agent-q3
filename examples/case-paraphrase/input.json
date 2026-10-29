@@ -1,0 +1,10 @@
+{
+  "question": "入职满一年以后，带薪年休假能休几天？",
+  "history": [],
+  "mock": true,
+  "inject_tool_fail": null,
+  "acceptance_points": [
+    "改写后的相似问题",
+    "明确答案"
+  ]
+}

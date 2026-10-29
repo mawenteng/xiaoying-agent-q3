@@ -1,0 +1,10 @@
+{
+  "question": "员工年假有多少天？",
+  "history": [],
+  "mock": true,
+  "inject_tool_fail": "search",
+  "acceptance_points": [
+    "工具失败",
+    "明确答案"
+  ]
+}
