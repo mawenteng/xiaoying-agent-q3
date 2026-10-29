@@ -89,10 +89,10 @@ python -m src.main --question "报销期限多久？"
 - `ask_user`: 需要用户确认时的追问
 - `trace`: 逐步动作、参数、返回摘要、rationale
 
-## 提交信息（待填）
+## 提交信息
 
 - 题号：`3`
 - GitHub URL：`https://github.com/mawenteng/xiaoying-agent-q3`
-- 最终 commit SHA：`（git rev-parse HEAD）`
+- 最终 commit SHA：`672da68ba9cde6d95ee110ef4dbdd12a789f532e`
 
 请勿提交真实密钥或隐私数据。私有仓库须给指定评审账号读权限。
