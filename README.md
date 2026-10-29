@@ -93,6 +93,6 @@ python -m src.main --question "报销期限多久？"
 
 - 题号：`3`
 - GitHub URL：`https://github.com/mawenteng/xiaoying-agent-q3`
-- 最终 commit SHA：`672da68ba9cde6d95ee110ef4dbdd12a789f532e`
+- 最终 commit SHA：见默认分支 HEAD（推送本清单更新后以 `git rev-parse HEAD` 为准；笔试表单填 tip SHA）
 
 请勿提交真实密钥或隐私数据。私有仓库须给指定评审账号读权限。
